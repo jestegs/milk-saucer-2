@@ -1,0 +1,69 @@
+:root {
+    --goss_darkteal: #007899;
+    --goss_teal: #159391;
+    --goss_pink: #ff80a4;
+    --goss_shadepink: #ff5e94;
+    --goss_hotpink: #ff2674;
+    --goss_skyblue: #68aed4;
+    --goss_angelblue: #1e398f;
+    --goss_nightblue: #192752;
+    --goss_lightteal: #10d275;
+    --goss_skinpurple: #94216a;
+    --goss_darkpurple: #430067;
+    --goss_darkgrey: #272c2f;
+}
+
+html {
+    background-color: var(--goss_darkteal);
+}
+
+body {
+    color: var(--goss_pink);
+    margin-left: 5%;
+}
+
+h1, h2, h3, h4 {
+    text-decoration: overline;
+}
+
+a {
+    text-decoration: overline;
+    color: var(--goss_pink);
+}
+a:visited {
+    color: var(--goss_skinpurple);
+}
+
+.mainPost {
+    background-color: var(--goss_teal);
+    color: var(--goss_pink);
+    border: 5px solid var(--goss_lightteal);
+
+    max-width: 50%;
+    margin-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.introHeader {
+    background-color: var(--goss_teal);
+    color: var(--goss_pink);
+    border: 5px solid var(--goss_lightteal);
+
+    max-width: 25%;
+    padding: 1%;
+}
+
+
+
+::-webkit-scrollbar{
+    background: var(--goss_pink);
+}
+::-webkit-scrollbar-thumb{
+    border: 1px solid var(--goss_pink);
+    background: var(--goss_darkteal);
+}
+::-webkit-scrollbar-button{
+    border: 1px solid var(--goss_pink);
+    background: var(--goss_darkteal);
+}
