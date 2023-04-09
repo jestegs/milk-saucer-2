@@ -15,6 +15,9 @@
 
 html {
     background-color: var(--goss_darkteal);
+
+    font-size: 150%;
+    font-weight: bold;
 }
 
 body {
@@ -22,7 +25,11 @@ body {
     margin-left: 5%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
+    text-decoration: overline;
+}
+
+a h3 {
     text-decoration: overline;
 }
 
@@ -44,14 +51,36 @@ a:visited {
     padding-left: 1%;
     padding-right: 1%;
 }
+.mainPost h2 {
+    margin-bottom: 0;
+}
+.mainPost h3 {
+    font-style: italic;
+    margin-top: 0;
+}
+
+.blogPost {
+    background-color: var(--goss_teal);
+    color: var(--goss_pink);
+    border: 5px solid var(--goss_lightteal);
+
+    max-width: 50%;
+    margin-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
 .introHeader {
     background-color: var(--goss_teal);
     color: var(--goss_pink);
     border: 5px solid var(--goss_lightteal);
 
-    max-width: 25%;
+    max-width: 15%;
     padding: 1%;
+}
+.introHeader h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
