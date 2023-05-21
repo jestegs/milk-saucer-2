@@ -42,8 +42,8 @@ a:visited {
 }
 
 .mainPost {
-    background-color: var(--goss_teal);
-    color: var(--goss_pink);
+    background-color: var(--goss_pink);
+    color: var(--goss_darkteal);
     border: 5px solid var(--goss_lightteal);
 
     max-width: 50%;
@@ -58,10 +58,13 @@ a:visited {
     font-style: italic;
     margin-bottom: 0;
 }
+.mainPost a {
+    color: var(--goss_skinpurple)
+}
 
 .blogPost {
-    background-color: var(--goss_teal);
-    color: var(--goss_pink);
+    background-color: var(--goss_pink);
+    color: var(--goss_darkteal);
     border: 5px solid var(--goss_lightteal);
 
     max-width: 50%;
@@ -77,6 +80,9 @@ a:visited {
     font-style: italic;
     margin-top: 0;
 }
+.blogPost a {
+    color: var(--goss_skinpurple)
+}
 .blogPost p {
     text-indent: 50px;
 }
@@ -87,8 +93,8 @@ a:visited {
 }
 
 .introHeader {
-    background-color: var(--goss_teal);
-    color: var(--goss_pink);
+    background-color: var(--goss_pink);
+    color: var(--goss_darkteal);
     border: 5px solid var(--goss_lightteal);
 
     max-width: 25%;
