@@ -12,12 +12,13 @@
     --goss_darkpurple: #430067;
     --goss_darkgrey: #272c2f;
 
-    --color_main_bg: #0e5348;
-    --color_post_bg: #1f796a;
-    --color_post_outline: #06332b;
-    --color_post_text: #744f0c;
-    --color_link: #04314b;
-    --color_link_click: #0c5f74;
+    --color_main_bg: #9eac53;
+    --color_title_text: #3c5315;
+    --color_post_bg: #f6a6df;
+    --color_post_outline: #82306b;
+    --color_post_text: #62528a;
+    --color_link: #1e3403;
+    --color_link_click: #404d37;
 }
 
 html {
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-    color: var(--color_post_bg);
+    color: var(--color_title_text);
     margin-left: 5%;
 }
 
@@ -41,7 +42,7 @@ a h3 {
 }
 
 a {
-    text-decoration: overline;
+    text-decoration: overline underline;
     color: var(--color_link);
 }
 a:visited {
@@ -50,7 +51,7 @@ a:visited {
 
 .mainPost {
     background-color: var(--color_post_bg);
-    color: var(--color_post_outline);
+    color: var(--color_post_text);
     border: 5px solid var(--color_post_outline);
 
     max-width: 50%;
@@ -71,7 +72,7 @@ a:visited {
 
 .blogPost {
     background-color: var(--color_post_bg);
-    color: var(--color_post_outline);
+    color: var(--color_post_text);
     border: 5px solid var(--color_post_outline);
 
     max-width: 50%;
@@ -101,7 +102,7 @@ a:visited {
 
 .introHeader {
     background-color: var(--color_post_bg);
-    color: var(--color_post_outline);
+    color: var(--color_post_text);
     border: 5px solid var(--color_post_outline);
 
     max-width: 25%;

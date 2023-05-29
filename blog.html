@@ -13,6 +13,8 @@
             <h2 style="margin-bottom: 0">archive</h2>
             <!--ARCHIVE_INJECTION_POINT-->
 
+<h3><a href="#post54724">May 29, 2023, Recent Updates and This Week's Plans</a></h3>
+
 <h3><a href="#post72373">May 28, 2023, Doldrums</a></h3>
             
             <h3><a href="#post1">April, 23, 2023, Automatic Test Post</a></h3>
@@ -24,6 +26,25 @@
 
 
         <!--BLOGPOST_INJECTION_POINT-->
+
+<div class="blogPost" id=post54724>
+<p class="topLink"><a href=#top>back to top</a></p>
+<h2>Recent Updates and This Week's Plans</h2>
+<h3>May 29, 2023</h3>
+<p>
+The other day I got some important bug fixes done. The first one had to do with loading the player's inventory correctly, as I noticed things were missing on respawn. At first I figured that it was something to do with improperly saving/loading the items, but I realized I was calling the 'remove item from inventory' function every time an item was picked up, not just the one time when you unholster it. So basically every time you messed around with these items jumping around your inventory screen, you were technically removing the items that were still on your belt. Come time to start a new level, your unfairly trimmed inventory was saved instead of the one that you appeared to have, and when you respawned you almost all the time started with nothing. I presume that fixing this one also fixed a bug where new magazines would be put into already occupied slots, so hopefully that is two problems with one solution.
+</p>
+<p>
+The second little bug was annoying but easier to fix. Turns out I wasn't disabling the mouse when the player leaves an inventory screen, so whatever they were hovering over would be clicked on when they interact with something in the world or shoot a gun, causing weird things like unloading the magazine or unholstering your weapon after every time you shot at something. I just made a global boolean flag that gets turned on and off whenever the player can use their little wiggly arm thing, so that if the player clicks on a grabbable UI object while not in a menu it won't proceed with the code block.
+</p>
+<p>
+
+</p>
+<p>
+Next week I will update the steam page with some gameplay and new art assets and a better description that suits what the game is about now. It has been a year since I touched that page basically so it can use an update. I feel my ideas and what I want to convey have changed a lot since.
+</p>
+
+</div>
 
 <div class="blogPost" id=post72373>
 <p class="topLink"><a href=#top>back to top</a></p>
