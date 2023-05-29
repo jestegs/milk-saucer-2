@@ -11,17 +11,24 @@
     --goss_skinpurple: #94216a;
     --goss_darkpurple: #430067;
     --goss_darkgrey: #272c2f;
+
+    --color_main_bg: #0e5348;
+    --color_post_bg: #1f796a;
+    --color_post_outline: #06332b;
+    --color_post_text: #744f0c;
+    --color_link: #04314b;
+    --color_link_click: #0c5f74;
 }
 
 html {
-    background-color: var(--goss_darkteal);
+    background-color: var(--color_main_bg);
 
     font-size: 150%;
     font-weight: bold;
 }
 
 body {
-    color: var(--goss_pink);
+    color: var(--color_post_bg);
     margin-left: 5%;
 }
 
@@ -35,16 +42,16 @@ a h3 {
 
 a {
     text-decoration: overline;
-    color: var(--goss_pink);
+    color: var(--color_link);
 }
 a:visited {
-    color: var(--goss_skinpurple);
+    color: var(--color_link_click);
 }
 
 .mainPost {
-    background-color: var(--goss_pink);
-    color: var(--goss_darkteal);
-    border: 5px solid var(--goss_lightteal);
+    background-color: var(--color_post_bg);
+    color: var(--color_post_outline);
+    border: 5px solid var(--color_post_outline);
 
     max-width: 50%;
     margin-top: 1%;
@@ -59,13 +66,13 @@ a:visited {
     margin-bottom: 0;
 }
 .mainPost a {
-    color: var(--goss_skinpurple)
+    color: var(--color_link);
 }
 
 .blogPost {
-    background-color: var(--goss_pink);
-    color: var(--goss_darkteal);
-    border: 5px solid var(--goss_lightteal);
+    background-color: var(--color_post_bg);
+    color: var(--color_post_outline);
+    border: 5px solid var(--color_post_outline);
 
     max-width: 50%;
     min-width: 50%;
@@ -81,7 +88,7 @@ a:visited {
     margin-top: 0;
 }
 .blogPost a {
-    color: var(--goss_skinpurple)
+    color: var(--color_link);
 }
 .blogPost p {
     text-indent: 50px;
@@ -93,9 +100,9 @@ a:visited {
 }
 
 .introHeader {
-    background-color: var(--goss_pink);
-    color: var(--goss_darkteal);
-    border: 5px solid var(--goss_lightteal);
+    background-color: var(--color_post_bg);
+    color: var(--color_post_outline);
+    border: 5px solid var(--color_post_outline);
 
     max-width: 25%;
     padding: 1%;
@@ -108,13 +115,13 @@ a:visited {
 
 
 ::-webkit-scrollbar{
-    background: var(--goss_pink);
+    background: var(--color_post_bg);
 }
 ::-webkit-scrollbar-thumb{
-    border: 1px solid var(--goss_pink);
-    background: var(--goss_darkteal);
+    border: 1px solid var(--color_main_bg);
+    background: var(--color_post_bg);
 }
 ::-webkit-scrollbar-button{
-    border: 1px solid var(--goss_pink);
-    background: var(--goss_darkteal);
+    border: 1px solid var(--color_main_bg);
+    background: var(--color_post_bg);
 }
