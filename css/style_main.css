@@ -32,6 +32,7 @@ html {
 }
 
 body {
+	text-align: center;
     color: var(--color_title_text);
     margin-left: 5%;
     margin-right: 5%;
@@ -97,6 +98,7 @@ a:visited {
     color: var(--color_link);
 }
 .blogPost p {
+	text-align: justify;
     text-indent: 50px;
 }
 
@@ -106,12 +108,10 @@ a:visited {
 }
 
 .introHeader {
+	margin: 0 auto;
     background-color: var(--color_post_bg);
     color: var(--color_post_text);
     border: 5px solid var(--color_post_outline);
-
-    max-width: 400px;
-    min-width: 400px;
     padding: 1%;
 }
 .introHeader h3 {
