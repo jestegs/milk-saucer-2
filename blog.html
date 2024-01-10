@@ -14,6 +14,8 @@
 				<h2 style="margin-bottom: 0">archive</h2>
 				<!--ARCHIVE_INJECTION_POINT-->
 
+<h3><a href="#post20255571.39739">January 10, 2024, A New Year</a></h3>
+
 <h3><a href="#post17087472.085076">December 4, 2023, Ritual</a></h3>
 
 <h3><a href="#post12074534.263197">October 7, 2023, Few and Far Between</a></h3>
@@ -33,6 +35,65 @@
 
 
 			<!--BLOGPOST_INJECTION_POINT-->
+
+<div class="blogPost" id=post20255571.39739>
+<p class="topLink"><a href=#top>back to top</a></p>
+<h2>A New Year</h2>
+<h3>January 10, 2024</h3>
+<p>
+Now that it's the New Year I wanted to try and organize my thoughts a bit. Goal-setting is not really what I want to do, but moreso go over what I have been able to do in the last twelve months and see how I can somehow extrapolate that into this year. When going through my development journal I was actually kind of surprised at how much I did, which is contrary to what I feel I have done. At the beginning of last year, I did a lot of modeling assets and sketching level designs because that was my priority. I was going to simply add the last couple of weapons and continue on to gameplay design and then be nearly done by 2024 (ha.) Instead a lot of different stuff happened and now I am on a completely different trajectory. 
+</p>
+<p>
+-
+</p>
+<p>
+A big thing that I finished fairly early on was the manual weapon switching, where, instead of pressing 'g' to cycle between five weapons, the player would drag and drop the weapon from their belt to their hands in a separate inventory. Development on this went pretty smoothly. The code was straight forward and most of the work I had to do was handling the art that would support it. I still feel like the UI could be designed better but that is going to be something that I revisit for the whole project later on. 
+</p>
+<p>
+An addition that made me very happy and reinvigorated me a little was creating the oscillating fan. It is one of those mundane things that just struck me as interesting and fun to make and so I did it in a fit of passion. One of the most rewarding ways to do things in my opinion. It encompassed pretty much every aspect of development, from code to handle the animation, 3D modeling and texture work, and sound design. That it touched upon all these aspects was really helpful for strengthening some skills, and combining them together into a finished asset felt like a miniature project in and of itself which was very motivating to me.
+</p>
+<p>
+Last year is also when I started to think about trash in the game, and how to handle the physics a little more interestingly. The trash was always going to crowd the screen, but making it react to the player's movement and other actions is really important for the game feel. To me it feels completely different and it offers a challenge that I think will be fun for the player to solve.
+</p>
+<p>
+I also buckled down and re-coded the vending machine functionality to be extendable and more random, which will help later down the line when I add new items. I would still like to tweak the randomness a little bit, maybe having it favor certain types of items, manually adjusting probabilities, stuff like that. But that is small work that can be done at any time.
+</p>
+<p>
+Perhaps the largest addition of last year was the shotgun implementation, which was not a small part of the reason why I began to rethink a lot of the code structure to the game. I thought it would be easier to rip a hole in the game and patch it up to be able to incorporate a new mechanic, but no, it was pretty complicated, and has been making me think the entire game's functionality is now pretty fragile, which in some way is funny. But it is mostly a frustrating thing to consider, despite almost being done with (what I presume to be) the last of the patchwork. The player code is really the only code that I need to preserve, the rest makes up a small part of the game. When I am done with the revolver, I should be done with the player and I will be able to move onto the rest of the stuff that is going to need to be developed.
+</p>
+<p>
+-
+</p>
+<p>
+Now, as for what is to come. My plan is of five parts:
+</p>
+<ol style="text-align: left">
+	<li>finish revolver implementation</li>
+	<li>upgrade to Godot 4 (3.4 is going to be ancient by the time this project is done...)</li>
+	<li>polish the physics</li>
+	<li>add back Qodot</li>
+	<li>work on AI and level design</li>
+</ol>
+<p>
+These five points have so many sub-points that I do not want to think about writing them down right now. I think, and hope, that the revolver will be completable in this wonderful month of January even though I have yet to turn on my PC since the first day. At the risk of lying to myself, I don't think there is much I have left, not accounting for the inevitable bug fixes that will have to be done. So that leaves February for upgrading to Godot 4. 
+</p>
+<p>
+Upgrading the engine is important to me because I have been using the same version for a couple years now basically, and since a couple more years is probably going to be the realistic timeframe for a release, I want to have it on software that is somewhat modern. We all know how quickly computers can change. This will also give me an opportunity to begin rewriting the game if I deem that I must. I am going to be rewriting the AI anyway considering that the gameplay design is drastically changing, and Godot 4 has a different navigation system, so I might as well take this opportunity the compile what I have learned about games programming and write the thing better and more prudently. 
+</p>
+<p>
+After the engine update/program rewrite, I am going to really hammer down the physics. Things are a little finicky at the moment, and since the physics are what the players are going to be interacting with the most (it is fundamentally the entire game!) I want it to feel great. 
+</p>
+<p>
+Then I am going to add back Qodot to the mix, as I will be removing almost everything except the reloading system during the upgrade. Qodot has been a fantastic help and I highly recommend it if you want to use Trenchbroom as a level editor for Godot. I plan to keep using it as it is the only level editor that I know how to use, and also seems the most intuitive/quick to develop ideas for. I tried Hammer a long time ago and it was confusing to me, Trenchbroom I picked up right away.
+</p>
+<p>
+After that it will be level design and AI (they kind of go hand in hand), and of course making more assets for sprucing up the levels. There are a lot of things that need to happen in between this stuff, so I am honestly not expecting to get it all finished this year. I also just don't want to set unrealistic expectations for myself. Unrealism can either go too far or not far enough, but if I get the upgrade done I will feel very satisfied, and that is something I can't imagine taking much longer than a few months, barring life events and mental health.
+</p>
+<p>
+I am feeling very confident about the projected project this year, and I am excited to continue. Now that I have somewhat of a system for writing blog posts and keeping updates on things that I can't really show off in the same way, I am also confident that I can keep a schedule of updates. Once a month is going fine so far, even though this is like the third or fourth month; there is always plenty to talk about and plenty of time to mentally prepare myself for getting *something* done. Thank you for caring enough to read this, and to everyone for caring enough at all about the project to continue expressing interest in it. You have been a big motivator for me to finish this <3.
+</p>
+
+</div>
 
 <div class="blogPost" id=post17087472.085076>
 <p class="topLink"><a href=#top>back to top</a></p>
