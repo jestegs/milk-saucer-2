@@ -14,6 +14,8 @@
 				<h2 style="margin-bottom: 0">archive</h2>
 				<!--ARCHIVE_INJECTION_POINT-->
 
+<h3><a href="#postwriting-what-was-already-written">February 15, 2024, Writing What Was Already Written</a></h3>
+
 <h3><a href="#post20255571.39739">January 10, 2024, A New Year</a></h3>
 
 <h3><a href="#post17087472.085076">December 4, 2023, Ritual</a></h3>
@@ -35,6 +37,28 @@
 
 
 			<!--BLOGPOST_INJECTION_POINT-->
+
+<div class="blogPost" id=postwriting-what-was-already-written>
+<p class="topLink"><a href=#top>back to top</a></p>
+<h2>Writing What Was Already Written</h2>
+<h3>February 15, 2024</h3>
+<p>
+I started writing this post last week but got side-tracked.
+</p>
+<p>
+This is the first update for how the re-write is going, and overall it isn't going that poorly. I am trying to re-imagine the code design to be a little more robust and understandable, because upon returning to it many times in the old structure, I was always confused and frustrated by it. I am hoping to both understand it better and make it more 'modular' this second time around. I am unsure whether or not my goal of having the reload system finished by March is realistic, as I have mostly been focusing on physics and item interaction, but that's fine because I don't really have any deadlines yet. A lot of the changes are probably things I don't even need to do, but it feels good to refresh my understanding of how it works since I first wrote these bits two years ago now. 
+</p>
+<p>
+The most significant change I have made so far is in how the PhysicsItems work, specifically how the player interacts with them. Before, the non-physics stuff like detecting the mouse and holding the object was based on using the collision shapes of the rigid body, which made more sense to me at the time. So the item's bounds would enter the drop area, the player would let go, and then something would happen. I am experimenting with having the interaction be based off the mouse instead, so something will only happen if the object is dropped when the mouse is in a significant area, not the object itself. I am hoping that this makes moving items around a little more intuitive and precise, but if it is too awkward I have another fix in mind that I didn't consider before, which is doing a sort of FIFO system with the areas that an object enters. But anyway.
+</p>
+<p>
+Programming is never without its stresses, but I think a lot of the stress I feel is preventable somehow. I often get into these lines of thinking where I feel I don't pause, it is just a continuous streak, and when I encounter a block that I didn't think about, I sweep it up into whatever I am working on, and it either messes everything up, or I forget I even modified it and it messes things up later. Most of the time when this happens I make a small change that only helps one problem, all the while creating others. So I need to get better at recognizing these moods. I have tried writing pseudo-code while at work to plan things out better, but that's tough because I don't really have the overall structure to reference when I am working on it, and I forget what it's like, and then I realize later that I actually can't implement this unless I change everything else. Hopefully that is also something that I can be more on top of with this re-write. This is one of the few larger programs I have written, and I feel like the stakes are somewhat higher for this one, because I am planning to distribute it and want as few bugs and quirks in the structure as possible. I want it to work as intended at least most of the time.
+</p>
+<p>
+I am finding a few hours every week to do some work on this, which is not even close to what I actually want to spend on it, but at least it is something, and somewhat regular. I'll see what I have at the end of this month and hopefully have more information to adjust my expectations for the future.
+</p>
+
+</div>
 
 <div class="blogPost" id=post20255571.39739>
 <p class="topLink"><a href=#top>back to top</a></p>
